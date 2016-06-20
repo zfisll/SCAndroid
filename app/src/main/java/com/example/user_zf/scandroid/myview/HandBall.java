@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -13,6 +14,8 @@ import com.example.user_zf.scandroid.R;
 /**
  * Created by user_zf on 16/6/20.
  * 跟随手移动的小球
+ * note：1、onTouchEvent的使用
+ *       2、onTouchEvent事件的传递：监听->view.callback->parent.callback
  */
 public class HandBall extends View{
 
@@ -47,6 +50,7 @@ public class HandBall extends View{
         currentX = event.getX();
         currentY = event.getY();
         invalidate();//重绘
-        return true;
+        Log.d("zf_tag", "HandBall onTouchEvent callback methdo");
+        return false;
     }
 }
