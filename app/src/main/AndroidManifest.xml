@@ -12,20 +12,53 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.HandlerActivity" />
+        <activity android:name=".activity.AsyncTaskActivity" />
+        <activity android:name=".activity.LifecycleActivity"/>
+        <activity
+            android:name=".activity.IntentAttrActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="zfisll" />
 
-        <activity android:name=".activity.MainActivity"/>
+                <category android:name="gaga" />
+                <category android:name="android.intent.category.DEFAULT"/>
 
-        <activity android:name=".activity.HandlerActivity"/>
+                <data android:mimeType="abc/xyz" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.IntentAttrActivity1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="zfisll" />
 
-        <activity android:name=".activity.AsyncTaskActivity"/>
+                <category android:name="gaga" />
+                <category android:name="haha" />
+                <category android:name="android.intent.category.DEFAULT"/>
 
-        <activity android:name=".activity.LifecycleActivity">
+                <data android:mimeType="abc/xyz" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.IntentAttrActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.IntentTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
