@@ -15,7 +15,7 @@
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.HandlerActivity" />
         <activity android:name=".activity.AsyncTaskActivity" />
-        <activity android:name=".activity.LifecycleActivity"/>
+        <activity android:name=".activity.LifecycleActivity" />
         <activity
             android:name=".activity.IntentAttrActivity"
             android:exported="true">
@@ -23,7 +23,7 @@
                 <action android:name="zfisll" />
 
                 <category android:name="gaga" />
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
 
                 <data android:mimeType="abc/xyz" />
             </intent-filter>
@@ -36,7 +36,7 @@
 
                 <category android:name="gaga" />
                 <category android:name="haha" />
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
 
                 <data android:mimeType="abc/xyz" />
             </intent-filter>
@@ -47,12 +47,14 @@
             <intent-filter>
                 <action android:name="android.intent.action.PICK" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
 
                 <data android:mimeType="image/*" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.IntentTest">
+        <activity android:name=".activity.IntentTest" />
+        <activity android:name=".activity.XmlParseActivity"/>
+        <activity android:name=".activity.AttrubiteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books>
+    <book price="35.9" 出版日期="1991-11-18">疯狂Android讲义</book>
+    <book price="50.8" 出版日期="2011-12-18">Head First设计模式</book>
+    <book price="39.8" 出版日期="2005-11-18">Java实战演练</book>
+</books>
