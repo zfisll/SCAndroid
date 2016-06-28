@@ -54,7 +54,7 @@
         </activity>
         <activity android:name=".activity.IntentTest" />
         <activity android:name=".activity.XmlParseActivity" />
-        <activity android:name=".activity.AttrubiteActivity"/>
+        <activity android:name=".activity.AttrubiteActivity" />
         <activity android:name=".activity.AssetDrawableActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -62,6 +62,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.SkinActivity"></activity>
     </application>
 
 </manifest>

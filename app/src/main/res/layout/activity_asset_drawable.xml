@@ -7,6 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background"
     tools:context="com.example.user_zf.scandroid.activity.AssetDrawableActivity">
 
     <Button
@@ -15,6 +16,26 @@
         android:layout_width="wrap_content"
         android:text="next picture"
         android:onClick="toNext"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@id/btn"
+        android:layout_toRightOf="@id/btn"
+        android:layout_marginLeft="20dp"
+        android:text="change skin"
+        android:onClick="changeSkin"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@id/btn1"
+        android:layout_toRightOf="@id/btn1"
+        android:layout_marginLeft="20dp"
+        android:text="start"
+        android:onClick="startActivity"/>
 
     <ImageView
         android:id="@+id/ivPicture"

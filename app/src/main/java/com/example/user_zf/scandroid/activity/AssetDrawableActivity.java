@@ -1,5 +1,6 @@
 package com.example.user_zf.scandroid.activity;
 
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.user_zf.scandroid.R;
+import com.example.user_zf.scandroid.utils.NightModeHelper;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -25,9 +27,12 @@ public class AssetDrawableActivity extends AppCompatActivity {
     String[] pictures;//图片名称数组
     AssetManager manager;
 
+    NightModeHelper helper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        helper = new NightModeHelper(this, R.style.AppTheme);
         setContentView(R.layout.activity_asset_drawable);
 
         ivPicture = (ImageView) findViewById(R.id.ivPicture);
@@ -74,5 +79,13 @@ public class AssetDrawableActivity extends AppCompatActivity {
         }catch(IOException e){
             e.printStackTrace();
         }
+    }
+
+    public void changeSkin(View source){
+        helper.toggle();
+    }
+
+    public void startActivity(View source){
+        this.startActivity(new Intent(this, SkinActivity.class));
     }
 }
