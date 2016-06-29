@@ -10,7 +10,7 @@ import android.content.SharedPreferences;
  */
 public class SPUtils {
 
-    public final String MY_FILE = "zf_file";
+    public static final String MY_FILE = "zf_file";
 
     public static void putBoolean(Context context, String name, boolean value){
         SharedPreferences.Editor editor = context.getSharedPreferences(MY_FILE, Activity.MODE_PRIVATE).edit();

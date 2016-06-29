@@ -56,13 +56,17 @@
         <activity android:name=".activity.XmlParseActivity" />
         <activity android:name=".activity.AttrubiteActivity" />
         <activity android:name=".activity.AssetDrawableActivity">
+
+        </activity>
+        <activity android:name=".activity.SkinActivity"></activity>
+        <activity android:name=".activity.SkinPreActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SkinActivity"></activity>
+        <activity android:name=".activity.ManyViewActivity"/>
     </application>
 
 </manifest>
