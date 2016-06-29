@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -37,6 +38,16 @@ public class AssetDrawableActivity extends AppCompatActivity {
 
         ivPicture = (ImageView) findViewById(R.id.ivPicture);
         initData();
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode == KeyEvent.KEYCODE_BACK){
+            startActivity(new Intent(this, SkinPreActivity.class));
+            Toast.makeText(this, "拦截返回事件", Toast.LENGTH_SHORT).show();
+            this.finish();
+        }
+        return true;
     }
 
     /**

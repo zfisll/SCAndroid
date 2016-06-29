@@ -18,5 +18,6 @@ public class SkinPreActivity extends AppCompatActivity {
 
     public void toSetting(View source){
         startActivity(new Intent(this, AssetDrawableActivity.class));
+        this.finish();
     }
 }
