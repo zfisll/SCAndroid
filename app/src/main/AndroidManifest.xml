@@ -57,18 +57,21 @@
         <activity android:name=".activity.AttrubiteActivity" />
         <activity android:name=".activity.AssetDrawableActivity" />
         <activity android:name=".activity.SkinActivity" />
-        <activity android:name=".activity.SkinPreActivity">
-
-        </activity>
+        <activity android:name=".activity.SkinPreActivity" />
         <activity android:name=".activity.ManyViewActivity" />
-        <activity android:name=".activity.CacheActivity"></activity>
-        <activity android:name=".activity.MoveBallActivity">
+        <activity android:name=".activity.CacheActivity" />
+        <activity android:name=".activity.MoveBallActivity" />
+        <activity android:name=".activity.IosSelectorDemo" />
+        <activity android:name=".activity.TweenActivity" />
+        <activity android:name=".activity.AnimatorActivity" />
+        <activity android:name=".activity.ClockActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".mvp.view.LoginActivity"/>
     </application>
 
 </manifest>
