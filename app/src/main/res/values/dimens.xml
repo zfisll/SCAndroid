@@ -3,4 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="ring_big_size">31sp</dimen>
+    <dimen name="ring_small_size">14sp</dimen>
+
 </resources>

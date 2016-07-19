@@ -9,7 +9,7 @@
     <color name="clockBackground">#D9FFFF</color>
 
     <color name="ring_red">#ff0000</color>
-    <color name="ring_blue">#0000aa</color>
+    <color name="ring_bg">#13151D</color>
     <color name="ring_text">#dddddd</color>
 
 </resources>
