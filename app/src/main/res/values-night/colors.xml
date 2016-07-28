@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#ff00aa</color>
     <color name="colorAccent">#00ff00</color>
     <color name="background">#000000</color>
+
+    <color name="ring_text">#101118</color>
 </resources>
